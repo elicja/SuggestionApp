@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SuggestionAppLibrary.Models
+﻿namespace SuggestionAppLibrary.Models
 {
-    internal class BasicSuggestionModel
+    public class BasicSuggestionModel
     {
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
+        public string Title { get; set; }
     }
 }
